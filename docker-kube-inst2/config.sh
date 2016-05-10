@@ -25,9 +25,9 @@ sed -i "s/MASTERSERVER/$MASTERNAME/g" /$KUBEHOME/node-config/proxy
 
 sleep 2
 
-sed -i "s/MASTERSERVER/$MASTERNAME/g" /$KUBEHOME/flannel-config/flannel-config.json
+sed -i "s/FLANNELRANGE/$FLANNEL/g" /$KUBEHOME/flannel-config/flannel-config.json
 
 sleep 2
 
-sed -i "s/FLANNELRANGE/$FLANNEL/g" /$KUBEHOME/flannel-config/flanneld
+sed -i "s/MASTERSERVER/$MASTERNAME/g" /$KUBEHOME/flannel-config/flanneld
 
