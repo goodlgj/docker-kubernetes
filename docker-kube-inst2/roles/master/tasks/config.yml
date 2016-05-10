@@ -1,0 +1,10 @@
+---
+
+  - name: Configure the etcd service
+    copy: src=master-config/etcd.conf dest=/etc/etcd/etcd.conf
+
+  - name: Edit the Kubeernetes config file
+    copy: src=master-config/kube-config dest=/etc/kubernetes/config
+
+  - name: Configure the Kubernetes apiserver
+    copy: src=master-config/apiserver dest=/etc/kubernetes/apiserver

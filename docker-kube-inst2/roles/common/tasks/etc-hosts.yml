@@ -1,0 +1,5 @@
+---
+##This playbook openshift-origin managing packages
+
+  - name: Configure /etc/hosts
+    copy: src=common-config/etc-hosts dest=/etc/hosts

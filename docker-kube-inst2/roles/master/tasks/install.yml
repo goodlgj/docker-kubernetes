@@ -1,0 +1,4 @@
+---
+
+  - name: Install the kuberenetes and etcd
+    shell: yum install -y kubernetes-master etcd

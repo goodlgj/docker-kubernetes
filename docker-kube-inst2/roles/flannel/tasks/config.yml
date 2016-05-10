@@ -1,0 +1,7 @@
+---
+
+  - name: Create Flannel configuration file
+    copy: src=flannel-config/flannel-config.json dest=/root/flannel-config.json
+
+  - name: Configure flanneld overlay network
+    copy: src=flannel-config/flanneld dest=/etc/sysconfig/flanneld

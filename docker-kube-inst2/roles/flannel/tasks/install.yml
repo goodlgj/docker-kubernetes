@@ -1,0 +1,4 @@
+---
+
+  - name: Install the flannel
+    shell: yum install -y flannel

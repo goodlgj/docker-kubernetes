@@ -1,0 +1,10 @@
+---
+
+  - name: Install the docker packages
+    yum: name=docker state=latest
+
+  - name: Update the system to the latest packages
+    shell: yum update -y
+  
+  - name: Start the docker service
+    service: name=docker state=restarted enabled=yes

@@ -1,0 +1,4 @@
+---
+
+  - name: Install the kubernetes
+    shell: yum install -y kubernetes-node

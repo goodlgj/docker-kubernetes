@@ -1,0 +1,4 @@
+---
+
+  - name: Start flannel services
+    script: flannel-config/service-start.sh

@@ -1,0 +1,6 @@
+---
+
+  - include: etc-hosts.yml
+  - include: ntp.yml
+  - include: docker-packages.yml
+  - include: firewall.yml

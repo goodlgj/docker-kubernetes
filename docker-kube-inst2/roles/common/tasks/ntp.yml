@@ -1,0 +1,10 @@
+---
+
+ - name: Install ntp 
+   yum: name=ntp state=present
+
+ - name: Configure ntp file
+   copy: src=common-config/ntp.conf dest=/etc/ntp.conf
+
+ - name: Start the ntp service
+   service: name=ntpd state=started enabled=yes

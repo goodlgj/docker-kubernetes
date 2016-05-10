@@ -1,0 +1,7 @@
+---
+
+  - name: Start node services
+    script: node-config/service-start.sh
+  #  service: name=docker state=restarted enabled=yes
+  #  service: name=kube-proxy.service state=restarted enabled=yes
+  #  service: name=kubelet.service state=restarted enabled=yes

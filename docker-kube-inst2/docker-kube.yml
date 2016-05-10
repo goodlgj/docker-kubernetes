@@ -1,0 +1,27 @@
+---
+##this playbook deploys docker-kubernetes
+
+
+- name: Preparing to deploy kubernetes
+  hosts: all
+  remote_user: root
+  roles:
+        - common
+
+- name: Setting up kubernetes on the master
+  hosts: master
+  remote_user: root
+  roles:
+        - master
+
+- name: Setting up kubernetes on the nodes
+  hosts: node
+  remote_user: root
+  roles:
+        - node
+
+- name: Preparing to deploy flannel
+  hosts: all
+  remote_user: root
+  roles:
+        - flannel
