@@ -3,7 +3,7 @@
 CLUSTER=192.168.56.0
 MASTERNAME=kube-master
 FLANNEL=10.20.0.0
-KUBEHOME=/root/docker-kubernetes/docker-kube-inst
+KUBEHOME=/root/docker-kubernetes/docker-kube-inst2
 
 sed -i "s/CLUSTERRANGE/$CLUSTER/g" /$KUBEHOME/master-config/apiserver
 
@@ -29,4 +29,5 @@ sed -i "s/MASTERSERVER/$MASTERNAME/g" /$KUBEHOME/flannel-config/flannel-config.j
 
 sleep 2
 
-sed -i “s/FLANNELRANGE/$FLANNEL/g" /$KUBEHOME/flannel-config/flanneld
+sed -i "s/FLANNELRANGE/$FLANNEL/g" /$KUBEHOME/flannel-config/flanneld
+
